@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Example\GiftItem\Model\GiftingRuleInterface" type="Example\GiftItem\Model\FreeBottleWithAnyBagGiftRule"/>
+    <type name="Magento\Quote\Model\Quote\TotalsCollector">
+        <plugin name="example_giftitem" type="Example\GiftItem\Plugin\AddGiftItemPlugin"/>
+    </type>
+</config>
