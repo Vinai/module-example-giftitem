@@ -124,7 +124,7 @@ class GiftItemManagerAddToCartTest extends TestCase
         
         $giftItemManager->setGiftItemsForQuote($quote);
         
-        $this->assertCount(2, $quote->getAllItems());
+        $this->assertCount(2, $quote->getAllItems(), 'No gift item was added to cart.');
     }
 
     public function testAddAndRemoveGiftItem()

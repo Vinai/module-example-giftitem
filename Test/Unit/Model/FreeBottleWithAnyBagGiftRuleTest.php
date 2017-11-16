@@ -180,7 +180,7 @@ class FreeBottleWithAnyBagGiftRuleTest extends TestCase
         $this->assertContainsOnlyInstancesOf(ProductInterface::class, $giftsToAdd);
     }
 
-    public function testSetsGiftAtyToBagQtyIfGiftBottleQtyIsHigher()
+    public function testSetsGiftQtyToBagQtyIfGiftBottleQtyIsHigher()
     {
         $mockQuote = $this->createMockQuote();
         $bagQtyty = 2;
